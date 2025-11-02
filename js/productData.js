@@ -22,7 +22,7 @@ const products = [
     name: "Converse Chuck 70",
     brand: "Converse",
     price: 950000,
-    image: "assets/img/converse.png",
+    image: "assets/img/Converse.png",
     description:
       "Converse Chuck 70 adalah versi modern dari sepatu klasik Converse dengan bahan kanvas premium dan sol yang lebih tebal. Memberikan kesan retro tapi tetap stylish untuk segala suasana."
   },
@@ -120,7 +120,7 @@ const products = [
     name: "On Cloudswift",
     brand: "On Running",
     price: 2500000,
-    image: "assets/img/OnCloudswift.png",
+    image: "assets/img/OnCloudSwift.png",
     description: "Mengusung teknologi CloudTec untuk sensasi ringan dan responsif saat berjalan atau jogging."
   },
   {
@@ -144,7 +144,7 @@ const products = [
     name: "Vans Sk8-Hi",
     brand: "Vans",
     price: 1100000,
-    image: "assets/img/VansSk8Hi.png",
+    image: "assets/img/VansSK8Hi.png",
     description: "High-top iconic Vans dengan material kuat dan cocok untuk kegiatan ekstrem/skate."
   },
   {
@@ -240,7 +240,7 @@ const products = [
     name: "On Cloudmonster",
     brand: "On Running",
     price: 2900000,
-    image: "assets/img/OnCloudmonster.png",
+    image: "assets/img/OnCloudMonster.png",
     description: "Midsole super tebal dan empuk, cocok buat yang suka kenyamanan ekstra."
   },
   {
@@ -252,3 +252,4 @@ const products = [
     description: "Pilihan tepat untuk pelari yang ingin kecepatan dan responsivitas maksimal."
   }
 ];
+
