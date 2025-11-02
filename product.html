@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - Hypestep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnH1zS3K6T..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Universal CSS layout -->
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">HYPESTEP</div>
+
+            <nav class="main-nav" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- ✅ PRODUCT DETAIL -->
+    <section class="product-detail container">
+
+        <div class="detail-left">
+            <img id="detailImage" src="" alt="Product Image">
+        </div>
+
+        <div class="detail-right">
+            <h1 id="detailName"></h1>
+            <p class="detail-price" id="detailPrice"></p>
+            <p class="detail-desc" id="detailDesc"></p>
+
+            <div class="product-size">
+                <p>Select Size</p>
+                <div class="size-options" id="sizeOptions">
+                    <button class="size-btn">37</button>
+                    <button class="size-btn">38</button>
+                    <button class="size-btn">39</button>
+                    <button class="size-btn">40</button>
+                    <button class="size-btn">41</button>
+                    <button class="size-btn">42</button>
+                    <button class="size-btn">43</button>
+                    <button class="size-btn">44</button>
+                </div>
+            </div>
+
+
+            <button class="btn-detailProduct" id="addToCartBtn">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="related container">
+        <h2>Related Products</h2>
+        <div class="product-grid" id="relatedProducts"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Hypestep. All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/productData.js"></script>
+    <script src="js/productDetail.js"></script>
+    <script src="js/script.js"></script>
+
+    <div id="cartPopup" class="popup-center">
+        <div class="popup-box">
+            <span class="popup-icon">✔</span>
+            <p id="popupText">Produk ditambahkan ke keranjang!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Success - Hypestep</title>
+
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+
+    <section class="success-container">
+        <div class="success-box">
+            <div class="success-icon">✅</div>
+            <h1>Order Berhasil!</h1>
+            <p>Terima kasih telah berbelanja di Hypestep.</p>
+
+            <p id="orderId"></p>
+            <p id="paymentMethod"></p>
+            <p id="orderDate"></p>
+
+            <div class="success-buttons">
+                <a href="shop.html" class="btn-primary">Order Again</a>
+                <a href="index.html" class="btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONFETTI -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        // ✅ Ambil data order dari localStorage
+        const orderData = JSON.parse(localStorage.getItem("lastOrder"));
+
+        // ✅ Kalau tidak ada order, balikin user ke cart
+        if (!orderData) {
+            window.location.href = "cart.html";
+        }
+
+        // ✅ Masukkan data ke HTML
+        document.getElementById("orderId").innerText = `Order ID: ${orderData.orderId}`;
+        document.getElementById("paymentMethod").innerText = `Metode Pembayaran: ${orderData.paymentMethod}`;
+        document.getElementById("orderDate").innerText = `Tanggal: ${orderData.orderDate}`;
+
+        // ✅ Hapus cart setelah checkout berhasil
+        localStorage.removeItem("cart");
+
+        // Confetti animation 🎉
+        confetti({
+            particleCount: 90,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    </script>
+
+</body>
+
+</html>

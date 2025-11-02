@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Hypestep</title>
+    <!-- Layout (navbar + footer + global design) -->
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnH1zS3K6T..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ✅ NAVBAR UNIVERSAL -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">HYPESTEP</div>
+
+            <nav class="main-nav" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="cart.html" class="active">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container cart-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="user-card">
+                <img src="assets/img/user.png" alt="User" class="user-avatar" />
+                <div class="user-name">Arshyil</div>
+            </div>
+
+            <ul class="sidebar-links">
+                <li><a href="#">Akun Saya</a></li>
+                <li class="active"><a href="#">Keranjang Saya</a></li>
+                <li><a href="#">Riwayat Pesanan</a></li>
+                <li><a href="#">Pengaturan</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <section class="cart-content">
+            <h1 class="page-title">Keranjang Belanja</h1>
+
+            <div id="cart-items" class="cart-items">
+                <!-- items injected by JS -->
+            </div>
+
+            <div class="cart-actions-row">
+                <div class="left-actions">
+                    <a href="shop.html" class="btn btn-ghost">Continue Shopping</a>
+                    <!-- <button id="clear-cart" class="btn btn-ghost-red">Kosongkan Keranjang</button> -->
+                    <a href="" class="btn btn-ghost-red" id="clear-cart">Kosongkan Keranjang</a>
+                </div>
+
+                <div class="right-summary">
+                    <div id="cart-total" class="cart-total">Total: Rp 0</div>
+                    <div class="summary-buttons">
+                        <a href="checkout.html" class="btn-primary" id="checkoutBtn">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating total bar for mobile -->
+    <div class="mobile-total-bar" id="mobileTotalBar" aria-hidden="true">
+        <div id="mobile-total" class="mobile-total">Rp 0</div>
+        <div class="mobile-actions">
+            <a href="checkout.html" class="btn btn-primary btn-sm">Checkout</a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">© 2025 HypeStep. All rights reserved.</div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

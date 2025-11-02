@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Payment Method - Hypestep</title>
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">HYPESTEP</div>
+
+            <nav class="main-nav" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="container payment-section reveal">
+        <h1 class="judul-cekout">Checkout</h1>
+        <!-- ✅ Progress Indicator -->
+        <div class="checkout-steps">
+            <div class="step done">Cart</div>
+            <div class="step active">Payment</div>
+            <div class="step">Done</div>
+        </div>
+
+        <h2 class="payment-heading">Choose Payment Method</h2>
+
+        <!-- ✅ Payment Options -->
+        <div class="payment-options">
+
+            <label class="payment-card">
+                <input type="radio" name="payment" value="Credit Card" />
+                <span>💳 Credit | Debit Card</span>
+            </label>
+
+            <label class="payment-card">
+                <input type="radio" name="payment" value="Bank Transfer" />
+                <span>🏦 Bank Transfer</span>
+            </label>
+
+            <label class="payment-card">
+                <input type="radio" name="payment" value="E-Wallet" />
+                <span>📱 E-Wallet (OVO | GoPay | Dana)</span>
+            </label>
+
+            <label class="payment-card">
+                <input type="radio" name="payment" value="COD" />
+                <span>🚚 COD (Cash On Delivery)</span>
+            </label>
+
+            <!-- ✅ tombol dipindahkan ke dalam container -->
+            <button class="btn-primary continue-btn" id="continuePayment">
+                Continue
+            </button>
+            <p id="paymentWarning" class="payment-warning">Please choose your payment method</p>
+
+
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        © 2025 Hypestep. All rights reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>
